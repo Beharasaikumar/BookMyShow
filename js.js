@@ -24,7 +24,9 @@ let movie = document.getElementById("movie");
 let payment = document.getElementById("payment");
 let pay = document.getElementById("pay");
 let hhom = document.getElementById("hhom");
-let experience = document.getElementById("experience")
+let experience = document.getElementById("experience");
+let imgab = document.getElementById("imgab");
+let aboutmovie = document.getElementById("about-movie")
 
 
 
@@ -112,5 +114,11 @@ hhom.onclick = function(){
     payment.style.display = "none";
     home.style.display = "block";
     movies.style.display = "none";
+
+}
+//about movies------
+imgab.onclick = function(){
+aboutmovie.style.display = "block";
+movies.style.display = "none";
 
 }
