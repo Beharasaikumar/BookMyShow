@@ -19,6 +19,12 @@ let homecm = document.getElementById("homecm");
 let home = document.getElementById("home");
 let votp = document.getElementById("votp");
 let footer = document.getElementById("footer");
+let movies = document.getElementById("movies");
+let movie = document.getElementById("movie");
+let payment = document.getElementById("payment");
+let pay = document.getElementById("pay");
+let hhom = document.getElementById("hhom");
+let experience = document.getElementById("experience")
 
 
 
@@ -84,4 +90,27 @@ votp.onclick = function(){
     verif.style.display = "none";
     footer.style.display = "block";
     footer.style.display = "flex";
+}
+
+//movies start-------
+movie.onclick = function(){
+    movies.style.display = "block";
+    home.style.display = "none";
+    payment.style.display = "none";
+
+}
+//payment start----
+pay.onclick = function(){
+    payment.style.display = "block";
+    home.style.display = "none";
+    movies.style.display = "none";
+
+}
+
+//home back-----
+hhom.onclick = function(){
+    payment.style.display = "none";
+    home.style.display = "block";
+    movies.style.display = "none";
+
 }
