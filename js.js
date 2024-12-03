@@ -1,4 +1,4 @@
-let logo = document.getElementById("logo");
+let logo = document.getElementById("logo");//starting logo----
 let skip = document.getElementById("skip");
 let skipp = document.getElementById("skipp");
 let white = document.getElementById("white");
@@ -26,7 +26,14 @@ let pay = document.getElementById("pay");
 let hhom = document.getElementById("hhom");
 let experience = document.getElementById("experience");
 let imgab = document.getElementById("imgab");
-let aboutmovie = document.getElementById("about-movie")
+let aboutmovie = document.getElementById("about-movie");//about movie----
+let book = document.getElementById("book");//booking tickets---
+let daytime = document.getElementById("day-time");// booking page-----
+let am = document.getElementById("11am");//time for booking tickets---
+let seats = document.getElementById("how-many-seats");//seats for booking--
+let left = document.getElementById("left");//go back from seats booking---
+let righ = document.getElementById("righ");//go back from  booking page---
+let left1 = document.getElementById("left1");//go back from about movie---
 
 
 
@@ -120,5 +127,40 @@ hhom.onclick = function(){
 imgab.onclick = function(){
 aboutmovie.style.display = "block";
 movies.style.display = "none";
+footer.style.display = "none";
+
+}
+
+//book tickets-----
+book.onclick = function() {
+    daytime.style.display = "block";
+    aboutmovie.style.display = "none";
+    
+}
+//booking seats---
+am.onclick = function(){
+    seats.style.display = "block";
+    daytime.style.display = "none";
+
+}
+//go back from seats booking---
+left.onclick = function (){
+    seats.style.display = "none";
+    daytime.style.display = "block";
+}
+//go back from  booking page---
+righ.onclick = function (){
+    seats.style.display = "none";
+    daytime.style.display = "none";
+    aboutmovie.style.display = "block";
+
+}
+//go back from about movie---
+left1.onclick = function (){
+    movies.style.display = "block";
+    daytime.style.display = "none";
+    aboutmovie.style.display = "none";
+    footer.style.display = "block";
+    footer.style.display = "flex";
 
 }
