@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-</head>
+  
+  </head>
 <body>
     <div id="logo">
         <img src="images/99.jpg" alt="" width="60%" height="50%">
@@ -829,7 +829,7 @@
 
 <!----------------- show-time-theater end----------------=--->
 <!----------------- how many seats start ----------------=--->
-<div id="how-many-seats" style="display: ;">
+<div id="how-many-seats" style="display:none ;">
   <div class="mname">
     <i class="fa-solid fa-chevron-left" id="left"></i>
     <h3>Devara</h3>
@@ -872,7 +872,7 @@
 <!----------------- how many seats end----------------=--->
 
 <!----------------- sitting seats start----------------=--->
-<div id="sitting-seats" style="display: ;">
+<div id="sitting-seats" style="display:none ; margin-bottom: 20%;" >
   <div class="mname">
     <i class="fa-solid fa-chevron-left"></i>
     <div class="smt">
@@ -1138,30 +1138,160 @@
 <p>Sold</p>
 </div>
 </div>
+<button id="cash" style="display: no;"><b>Pay₹754</b></button>
+
 </div>
+
 <!----------------- sitting seats end----------------=--->
 
 <!------------------contact details start---------------->
-<div id="contact-details" style="display: ;">
+<div id="contact-details" style="display:none ;">
 
   <div class="details">
   <div class="mname">
-    <i class="fa-solid fa-chevron-left"></i>
+    <i class="fa-solid fa-chevron-left" id="faleft"></i>
     <h6>Contact Details</h6>
 </div>
 <input type="email" placeholder="Your Email"><br><br>
-<input type="number" placeholder="Mobile Number">
+<input type="tel" placeholder="Mobile Number">
 <div class="terms">
   <p><u> Terms and Conditions</u></p>
   <i class="fa-solid fa-chevron-down"></i>
 </div>
   </div>
 <div class="update-btn">
-  <button>Update Details</button>
+  <button id="upde">Update Details</button>
 </div>
 </div>
 
 <!------------------contact details end ---------------->
+
+<!------------------snacks start ---------------->
+<div id="snacks">
+  <div class="cys">
+  <div class="mname">
+    <i class="fa-solid fa-chevron-left" id="falef"></i>
+    <h5>Choose Your Snacks</h5></div>
+    <div class="skip2">
+    <p>Skip</p>
+    </div>
+</div>
+<div class="snaks-bttn">
+  <button style="background-color: rgb(75, 198, 239); color: white;">Popular</button>
+  <button>Popcorn</button>
+  <button>Drinks</button>
+  <button>IceCream</button>
+  <button>Water</button>
+  <button>Samosa</button>
+
+</div>
+<div class="snack-item">
+  <div class="s-item">
+    <div class="snack-img">
+      <img src="snack1.png" alt="" height="70px">
+    </div>
+    <div class="snack-name">
+      <p>Popcorn <br>50</p>
+     </div>
+  </div>
+  <div class="snack-btn">
+    <button style="    background-color: rgb(75, 198, 239); color: white;">Add</button>
+    <div class="quantity">
+      <i class="fa-regular fa-square-minus"></i>
+      <u>2</u>
+      <i class="fa-regular fa-square-plus"></i>
+    </div>
+  </div>
+</div>
+
+<div class="snack-item">
+  <div class="s-item">
+    <div class="snack-img">
+      <img src="snack2.jpg" alt="" height="70px">
+    </div>
+    <div class="snack-name">
+      <p>Drinks <br>69</p>
+     </div>
+  </div>
+  <div class="snack-btn">
+    <button>Add</button>
+    <div class="quantity" style="display: none;">
+      <i class="fa-regular fa-square-minus"></i>
+      <u>2</u>
+      <i class="fa-regular fa-square-plus"></i>
+    </div>
+  </div>
+</div>
+
+<div class="snack-item">
+  <div class="s-item">
+    <div class="snack-img">
+      <img src="snack3.png" alt="" height="70px">
+    </div>
+    <div class="snack-name">
+      <p>IceCream<br>70</p>
+     </div>
+  </div>
+  <div class="snack-btn">
+    <button>Add</button>
+    <div class="quantity" style="display: none;">
+      <i class="fa-regular fa-square-minus"></i>
+      <u>2</u>
+      <i class="fa-regular fa-square-plus"></i>
+    </div>
+  </div>
+</div>
+
+<div class="snack-item">
+  <div class="s-item">
+    <div class="snack-img">
+      <img src="snack4.jpg" alt="" height="80px">
+    </div>
+    <div class="snack-name">
+      <p>Water <br>20</p>
+     </div>
+  </div>
+  <div class="snack-btn">
+    <button>Add</button>
+    <div class="quantity" style="display: none;">
+      <i class="fa-regular fa-square-minus"></i>
+      <u>2</u>
+      <i class="fa-regular fa-square-plus"></i>
+    </div>
+  </div>
+</div>
+ <div class="parking">
+  <div class="byp">
+  <h4>Book Your Parking</h4>
+  <p>Theater Name</p></div>
+  <div class="p-charges">
+    <p>Parking Charges</p>
+    <img src="images/img9.jpg" alt="" height="50px" width="155px">
+  </div>
+  <div class="parking-rate">
+    <div class="parking-type">
+      <i class="fa-solid fa-bicycle"></i>
+      <button>₹20</button>
+    </div>
+    <div class="parking-type">
+      <i class="fa-solid fa-truck"></i>
+      <button>₹20</button>
+    </div>
+    <div class="parking-type">
+      <i class="fa-solid fa-car"></i>
+       <button>₹20</button>
+    </div>
+    <div class="parking-type">
+      <p>Parking Available <br>Timings</p>
+      <button>8:30AM TO 1:30PM</button>
+    </div>
+  </div>
+  <div class="book-btn">
+    <button>BOOK</button>
+  </div>
+ </div>
+</div>
+<!------------------sancks end ---------------->
 </body>
 <script src="js.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

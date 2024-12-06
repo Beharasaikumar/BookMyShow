@@ -37,6 +37,14 @@ let righ = document.getElementById("righ");//go back from  booking page---
 let left1 = document.getElementById("left1");//go back from about movie---
 let selectS = document.getElementById("selectS");//selecting seats----
 let sittingseats = document.getElementById("sitting-seats");//selecting seats----
+let cash = document.getElementById("cash");//payment for tickets----
+let Sitting = document.querySelectorAll(".sitting");//select seats---
+let contact = document.getElementById("contact-details");//contact-details for paying--
+let gobackk = document.getElementById("faleft");//back from contact-details for paying--
+let snacks = document.getElementById("snacks");//snacks for eating---
+let upde = document.getElementById("upde");//update for snacks----
+let gobackkk = document.getElementById("falef");//back from snacks--
+
 
 white.onclick = function(){
     skip.style.display = "none";
@@ -177,3 +185,32 @@ selectS.onclick = function(){
     sittingseats.style.display = "block";
 }
 
+//payment for tickets----
+Sitting.onclick = function(){
+    cash.style.display = "block";
+    
+}
+
+//contact-details for paying--
+
+cash.onclick = function(){
+    contact.style.display = "block";
+    sittingseats.style.display = "none";
+}
+
+//back from contact-details for paying--
+gobackk.onclick = function(){
+    contact.style.display = "none";
+    sittingseats.style.display = "block";
+}
+//snacks for eating---
+
+upde.onclick = function(){
+    snacks.style.display = "block";
+    contact.style.display = "none";
+}
+//back from contact-details for paying--
+gobackkk.onclick = function(){
+    contact.style.display = "block";
+    snacks.style.display = "none";
+}

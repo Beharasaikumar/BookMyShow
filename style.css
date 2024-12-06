@@ -922,6 +922,15 @@ height: 60px;
     padding: 1%;
     font-size: 13px;
 }
+#cash{
+    position: absolute;
+    width: 100%;
+    height: 7%;
+    border-radius: 25px;
+    background-color: red;
+    margin-top: -2%;
+
+}
 /*--------------sitting seats end-------------------*/
 
 
@@ -970,4 +979,131 @@ height: 60px;
     border-radius: 20px;
 }
 /*--------------contact dtails end-------------------*/
+
+/*--------------snacks start-------------------*/
+#snacks{
+    padding: 2% 3%;
+}
+.cys{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mname{
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.skip2 p{
+    font-size: 13px;
+    padding-top: 50%;
+    width: fit-content;
+}
+.snaks-bttn{
+    display: flex;
+    gap: 2%;
+    padding: 2% 0 2% 0;
+    overflow-x: auto;
+}
+.snaks-bttn::-webkit-scrollbar{
+    display: none;
+}
+.snaks-bttn button{
+    background-color: white;
+    color: black;
+    width: 200px;
+    padding-top: .5%;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid black;
+
+}
+.snaks-bttn button:hover{
+    background-color: rgb(75, 198, 239);
+    border: none;
+    box-shadow: 1px 1px 7px rgba(46, 130, 157, 0.832);
+    color: white;
+}
+.snack-item{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+}
+.s-item{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.snack-btn button{
+    height: 30px;
+    width: 80px;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: rgb(207, 38, 38);
+
+}
+.snack-btn button:hover{
+    background-color: rgb(75, 198, 239);
+    color: white;
+    border: none;
+}
+.quantity{
+    text-align: center;
+}
+.quantity i{
+    color: rgb(75, 198, 239);
+}
+.parking{
+    text-align: center;
+}
+.byp{
+    line-height: 0px;
+}
+.p-charges{
+    margin-top: -7%;
+    display: flex;
+    justify-content: space-between;
+}
+.p-charges p{
+    width: fit-content;
+}
+.parking-rate{
+    display: flex;
+    padding-bottom: .9%;
+    box-shadow: 0px 3px 3px 0px rgba(128, 128, 128, 0.575) ;
+    justify-content: space-evenly;
+}
+.parking-type i{
+    font-size: 25px;
+    padding-top: 32%;
+}
+.parking-type button{
+    height: 25px;
+    width: 100%;
+    padding: .5%;
+    font-size: 13px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.book-btn{
+    margin-top: 3%;
+}
+.book-btn button{
+    height: 40px;
+    width: 100%;
+    padding: .5%;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color:rgb(75, 198, 239);
+    border: none;
+    color: white;
+}
+/*--------------snacks end-------------------*/
 }
