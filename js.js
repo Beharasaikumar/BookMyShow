@@ -24,6 +24,7 @@ let movie = document.getElementById("movie");
 let payment = document.getElementById("payment");
 let pay = document.getElementById("pay");
 let hhom = document.getElementById("hhom");
+let chudu = document.getElementById("chudu");//see all at home page-----
 let experience = document.getElementById("experience");
 let imgab = document.getElementById("imgab");
 let aboutmovie = document.getElementById("about-movie");//about movie----
@@ -34,8 +35,8 @@ let seats = document.getElementById("how-many-seats");//seats for booking--
 let left = document.getElementById("left");//go back from seats booking---
 let righ = document.getElementById("righ");//go back from  booking page---
 let left1 = document.getElementById("left1");//go back from about movie---
-
-
+let selectS = document.getElementById("selectS");//selecting seats----
+let sittingseats = document.getElementById("sitting-seats");//selecting seats----
 
 white.onclick = function(){
     skip.style.display = "none";
@@ -100,7 +101,12 @@ votp.onclick = function(){
     footer.style.display = "block";
     footer.style.display = "flex";
 }
+//see all at home page-----
 
+chudu.onclick = function(){
+    experience.style.display = "block";
+    home.style.display = "none";
+}
 //movies start-------
 movie.onclick = function(){
     movies.style.display = "block";
@@ -164,3 +170,10 @@ left1.onclick = function (){
     footer.style.display = "flex";
 
 }
+
+//selecting seats----
+selectS.onclick = function(){
+    seats.style.display = "none";
+    sittingseats.style.display = "block";
+}
+
