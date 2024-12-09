@@ -44,6 +44,10 @@ let gobackk = document.getElementById("faleft");//back from contact-details for 
 let snacks = document.getElementById("snacks");//snacks for eating---
 let upde = document.getElementById("upde");//update for snacks----
 let gobackkk = document.getElementById("falef");//back from snacks--
+let booking = document.getElementById("booking");//booking tickets----
+let confirm = document.getElementById("confirm");//confirm tickets----
+let debitcard = document.getElementById("debitcard");//debit card --------
+let carddetails = document.getElementById("card-details");//card details---- 
 
 
 white.onclick = function(){
@@ -213,4 +217,15 @@ upde.onclick = function(){
 gobackkk.onclick = function(){
     contact.style.display = "block";
     snacks.style.display = "none";
+}
+
+//booking tickets----
+booking.onclick = function(){
+    confirm.style.display = "block";
+    snacks.style.display = "none";
+}
+//debit card --------
+debitcard.onclick = function(){
+    carddetails.style.display = "block";
+    confirm.style.display = "none";
 }
