@@ -11,9 +11,9 @@
   </head>
 <body>
     <div id="logo">
-        <img src="images/99.jpg" alt="" width="60%" height="50%">
+        <img src="images/logo.jpg" alt="" width="60%" height="50%">
     </div>
-    <div id="skip" style="display:none ;" >
+    <div id="skip" style="display: none;" >
     <div id="skip1">
         <img src="images/99.jpg" alt="" width="60%" height="50%">
         <p>The easiest way to book tickets <br> enjoy seamless tickets booking.</p>
@@ -48,10 +48,21 @@
                 <img src="images/img1.jpg" alt="" width="60%" height="50%">
                 <h2>Location Access</h2>
                 <p>The easiest way to book tickets <br> enjoy seamless tickets booking.</p><br>
-                <button class="btn btn-primary" type="submit">Allow Access</button><br>
+                <button class="btn btn-primary" type="submit" id="access">Allow Access</button><br>
                 <button class="btn btn-primary" type="submit" id="enter">Enter Manually</button>
             </div>
             </div>
+                    <!----------location- access--------->
+                    <div id="locac" style="display: none;">
+                      <h2>Allow"Location"to access <br>your location</h2>
+                      <p>This app needs your location to search for nearby businesses?</p>
+                      <hr>
+                      <h4 id="query">Allow While Using App</h4> <hr>
+                      <h4 >Allow Once</h4><hr>
+                      <h4 >Don't Allow</h4>
+                    </div>
+        <!----------location-access end--------->
+
 
         <!----------login---------->
 
@@ -1373,7 +1384,7 @@
 <!------------------booking  end---------------->
 
 <!------------------card details start ---------------->
-<div id="card-details">
+<div id="card-details" style="display: none;">
   <div class="mname">
     <i class="fa-solid fa-chevron-left"></i>
     <h5>Enter Card Details</h5>
@@ -1386,7 +1397,7 @@
   <img src="images/v-img3.png" alt="" height="30px" width="50px">
 </div><br>
 <div class="inputs-card">
-<input type="number" placeholder="Card Number">
+<input type="tel" placeholder="Card Number">
 <div class="card-input">
   <input type="number" placeholder="Expiry Date">
   <input type="number" placeholder="CVV" style="width: 50%;">
@@ -1394,13 +1405,38 @@
 <input type="text" placeholder="Card holder Name">
 </div>
 <div class="pay-btn">
-  <button>Pay</button>
+  <button id="paying">Pay</button>
 </div>
 </div>
 
 
 </div>
 <!------------------card details end ---------------->
+
+<!------------------set up UPI start------------------>
+<div id="setup-UPI" style="display: none;">
+  <div class="set-up-heading">
+    <h5>Set up UPI</h5>
+    <div class="payment-app">
+      <img src="images/app-img.jpg" alt="" height="50px" width="50px">
+      <img src="images/app-img2.png" alt="" height="50px" width="50px">
+      <img src="images/app-img3.png" alt="" height="50px" width="50px">
+
+    </div>
+    <p>You can change this payment <br>
+    setting at any time in your payment method </p>
+<div class="setup-input">
+  <input type="tel" placeholder="Enter Your UPI ID">
+  <input type="tel" placeholder="Enter link Mobile number">
+
+</div><br>
+<p style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> I agree to all terms and conditions</p>
+<div class="set-pay-btn">
+  <button>Pay</button>
+</div>
+  </div>
+</div>
+<!------------------set up UPI end------------------>
 
 </body>
 <script src="js.js"></script>

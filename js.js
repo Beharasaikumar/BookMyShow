@@ -1,3 +1,13 @@
+    setTimeout(function(){
+        skip.style.display = "block";
+        logo.style.display = "none";
+
+    }, 1000);
+
+
+
+
+
 let logo = document.getElementById("logo");//starting logo----
 let skip = document.getElementById("skip");
 let skipp = document.getElementById("skipp");
@@ -10,7 +20,10 @@ let goo = document.getElementById("goo");
 let goback = document.getElementById("goback");
 let login = document.getElementById("login");
 let signup = document.getElementById("signup");
-let enter = document.getElementById("enter");
+let enter = document.getElementById("enter");//location access----
+let access = document.getElementById("access");//allow access---
+let locac = document.getElementById("locac");//allow access page---
+let query = document.getElementById("query");//allow access ------
 let went = document.getElementById("went");
 let verify = document.getElementById("verify");
 let verif = document.getElementById("verify-otp");
@@ -48,6 +61,11 @@ let booking = document.getElementById("booking");//booking tickets----
 let confirm = document.getElementById("confirm");//confirm tickets----
 let debitcard = document.getElementById("debitcard");//debit card --------
 let carddetails = document.getElementById("card-details");//card details---- 
+let paying = document.getElementById("paying");//paying datails----
+let setupUPI = document.getElementById("setup-UPI");//paying datails----
+
+
+
 
 
 white.onclick = function(){
@@ -71,6 +89,16 @@ right1.onclick = function(){
     loc.style.display = "none";
     login.style.display = "block";
 
+  }
+  //allow access---
+  access.onclick = function(){
+    locac.style.display = "block";
+    loc.style.display = "none";
+  }
+
+  query.onclick = function(){
+   login.style.display = "block";
+    locac.style.display = "none";
   }
 
 //login forms--------
@@ -228,4 +256,11 @@ booking.onclick = function(){
 debitcard.onclick = function(){
     carddetails.style.display = "block";
     confirm.style.display = "none";
+}
+
+//paying datails----
+paying.onclick = function(){
+    setupUPI.style.display = "block";
+    carddetails.style.display = "none";
+
 }
